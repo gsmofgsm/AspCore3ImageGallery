@@ -17,8 +17,8 @@ namespace Marvin.IDP
                 new IdentityResources.Profile() // add user claims family_name, given_name ...
             };
 
-        public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
+        public static IEnumerable<ApiResource> Apis =>
+            new ApiResource[]
             { };
 
         public static IEnumerable<Client> Clients =>

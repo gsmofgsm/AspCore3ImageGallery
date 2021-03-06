@@ -3,7 +3,7 @@
 
 
 
-namespace IdentityServerHost.Quickstart.UI
+namespace Marvin.IDP
 {
     public class RedirectViewModel
     {
