@@ -33,7 +33,7 @@ namespace ImageGallery.API
                 .AddIdentityServerAuthentication(options =>
                 {
                     options.Authority = "https://localhost:44318"; // IDP, middleware uses it to load metadata document
-                    options.ApiName = "imagegalleyapi"; // check imagegalleyapi in the audient
+                    options.ApiName = "imagegalleryapi"; // check imagegalleyapi in the audient
                 });
 
             // register the DbContext on the container, getting the connection string from
