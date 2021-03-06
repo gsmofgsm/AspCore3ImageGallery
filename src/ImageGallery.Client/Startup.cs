@@ -88,6 +88,7 @@ namespace ImageGallery.Client
                 options.Scope.Add("imagegalleryapi");
                 options.Scope.Add("subscriptionlevel");
                 options.Scope.Add("country");
+                options.Scope.Add("offline_access");
                 //options.ClaimActions.Remove("nbf"); // so nbf is no longer filtered out in claims
                 //options.ClaimActions.DeleteClaim("address"); // no mapping by default, so no need to manully delete it
                 options.ClaimActions.DeleteClaim("sid");
