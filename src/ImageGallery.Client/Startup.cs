@@ -67,6 +67,7 @@ namespace ImageGallery.Client
                 //options.Scope.Add("profile"); // by default
                 options.Scope.Add("address");
                 options.Scope.Add("roles");
+                options.Scope.Add("imagegalleryapi");
                 //options.ClaimActions.Remove("nbf"); // so nbf is no longer filtered out in claims
                 //options.ClaimActions.DeleteClaim("address"); // no mapping by default, so no need to manully delete it
                 options.ClaimActions.DeleteClaim("sid");
