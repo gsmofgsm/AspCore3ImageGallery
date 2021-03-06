@@ -16,6 +16,10 @@ namespace Marvin.IDP
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(), // add user claims family_name, given_name ...
                 new IdentityResources.Address(),
+                new IdentityResource(  // role is not standard Identity resource, we need to new one up ourselvs
+                    "roles",
+                    "Your role(s)",
+                    new List<string>() { "role" })
             };
 
         public static IEnumerable<ApiResource> Apis =>
@@ -44,6 +48,7 @@ namespace Marvin.IDP
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         IdentityServerConstants.StandardScopes.Address,
+                        "roles",
                     },
                     ClientSecrets =
                     {
