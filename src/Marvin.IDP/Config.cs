@@ -19,7 +19,15 @@ namespace Marvin.IDP
                 new IdentityResource(  // role is not standard Identity resource, we need to new one up ourselvs
                     "roles",
                     "Your role(s)",
-                    new List<string>() { "role" })
+                    new List<string>() { "role" }),
+                new IdentityResource(
+                    "country",
+                    "The country you're living in",
+                    new List<string>() { "country" }),
+                new IdentityResource(
+                    "subscriptionlevel",
+                    "Your subscription level",
+                    new List<string>() { "subscriptionlevel" })
             };
 
         public static IEnumerable<ApiResource> Apis =>
@@ -54,6 +62,8 @@ namespace Marvin.IDP
                         IdentityServerConstants.StandardScopes.Address,
                         "roles",
                         "imagegalleryapi",
+                        "country",
+                        "subscriptionlevel",
                     },
                     ClientSecrets =
                     {
